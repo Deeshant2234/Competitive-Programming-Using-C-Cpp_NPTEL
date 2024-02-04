@@ -30,7 +30,14 @@ int reversort(vi L){
 
 
 int main(){
-    std::ios::sync_with_stdio(false);
+    #ifndef ONLINE_JUDGE
+        freopen("in.txt","r", stdin);
+        freopen("out.txt","w", stdout);
+    #endif
+  
+    std::ios::sync_with_stdio(false);  // is used to unsynchronize C++ 
+                                       //standard streams with C standard streams, 
+                                       //which can improve the performance of input/output operations.
 
     int T;
     cin >> T;
